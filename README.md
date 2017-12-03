@@ -36,3 +36,12 @@
 4.  课程详情：随便找个课程列表的课程点进去就是课程详情页了，目前只绑定了一些基本的信息
 
 效果地址浏览：[传送门](http://www.daybk.com/dist)
+
+### 补充：
+项目浏览需要系统有安装npm，下面是本地查看demo步骤
+1. npm安装完成需要全局安装gulp，若之前有安装过就不需要了
+    > npm install -g gulp
+2. 在demo中package.json文件所在目录安装一下demo所需模块
+    > npm install
+3. 前面步骤执行完后使用下面命令会自动使用默认浏览器打开demo页面
+    > gulp ng
