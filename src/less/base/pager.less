@@ -1,0 +1,41 @@
+.pager {
+    float: left;
+    position: relative;
+    left: 50%;
+    margin: 30px 0;
+    transform: translate(-50%, 0);
+    cursor: default;
+    li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .prev, .next {
+        a {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        &.active {
+            color: @gray;
+            cursor: default;
+        }
+    }
+    li:not(.pageNum) {
+        cursor: pointer;
+    }
+    i, .pageNum a {
+        display: inline-block;
+        margin:0 3px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        & {
+            background: @drak-gray;
+            color: @white;
+        }
+        &.active{
+            background:@warm-blue;
+        }
+    }
+}

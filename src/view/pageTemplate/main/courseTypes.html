@@ -1,0 +1,79 @@
+<div class="courseTypes">
+    <h1 ng-class="info.icon" ng-bind-html="title"></h1>
+    <div class="banner" ng-show="info.banner">
+        <a href="javascript:;" style="background-image:url('/images/s2.jpg');">
+            <h2>IT开发企业级电商项目首选课堂</h2>
+            <p>学习专业IT技术，做企业技能型人才</p>
+        </a>
+        <a href="javascript:;" style="background-image:url('/images/s2.jpg');">
+            <h2>IT开发企业级电商项目首选课堂</h2>
+            <p>学习专业IT技术，做企业技能型人才</p>
+        </a>
+    </div>
+    <div class="course">
+        <a ng-repeat="i in data | abc:info.sort | limitTo:(info.row*5)" ng-if="i.courseCategory==0" href="#!/course_show?courseId={{i.courseId}}">
+            <div>
+                <img ng-src="{{i.courseCover.smallUrl}}" />
+                <div class="tag">
+                    <span ng-repeat="j in i.category | limitTo:2" ng-bind="class[j].className"></span>
+                </div>
+                <div ng-if="i | hot" class="sign hot"></div>
+                <div ng-if="i | new" class="sign new"></div>
+            </div>
+            <dl>
+                <dt ng-bind="i.courseName"></dt>
+                <dd>
+                    <span ng-bind="i.courseCategory | category"></span>
+                    <span ng-bind="i.courseLv | level"></span>
+                    <span><i class="fa fa-user-o"></i>{{i.NumberOfLearners}}</span>
+                    <span class="fa star"><b ng-style="{'width':i.courseScore*10}"></b></span>
+                </dd>
+                <dd class="price free">免费</dd>
+            </dl>
+        </a>
+        <a ng-repeat="i in data | abc:info.sort | limitTo:(info.row*5)" ng-if="i.courseCategory==1" href="#!/course_show?courseId={{i.courseId}}">
+            <div>
+                <img ng-src="{{i.courseCover.smallUrl}}" />
+                <div class="tag">
+                    <span ng-repeat="j in i.category | limitTo:2" ng-bind="class[j].className"></span>
+                </div>
+                <div ng-if="i | hot" class="sign hot"></div>
+                <div ng-if="i | new" class="sign new"></div>
+            </div>
+            <dl>
+                <dt ng-bind="i.courseName"></dt>
+                <dd>
+                    <span ng-bind="i.courseCategory | category"></span>
+                    <span ng-bind="i.courseLv | level"></span>
+                    <span><i class="fa fa-user-o"></i>{{i.NumberOfLearners}}</span>
+                    <span class="fa star"><b ng-style="{'width':i.courseScore*10}"></b></span>
+                </dd>
+                <dd class="price" ng-bind="'¥ '+i.coursePrice"></dd>
+            </dl>
+        </a>
+        <a ng-repeat="i in data | abc:info.sort | limitTo:(info.row*5)" ng-if="i.courseCategory==2" href="#!/course_show?courseId={{i.courseId}}">
+            <div>
+                <div class="moveUp">
+                    <img ng-src="{{i.courseCover}}" />
+                    <img ng-src="{{i.courseCover}}" />
+                    <img ng-src="{{i.courseCover}}" />
+                    <div class="tag">
+                        <span ng-repeat="j in i.category | limitTo:2" ng-bind="class[j].className"></span>
+                    </div>
+                    <div ng-if="i | hot" class="sign hot"></div>
+                    <div ng-if="i | new" class="sign new"></div>
+                </div>
+            </div>
+            <dl>
+                <dt ng-bind="i.courseName"></dt>
+                <dd>
+                    <span ng-bind="i.courseCategory | category"></span>
+                    <span ng-bind="i.courseLv | level"></span>
+                    <span><i class="fa fa-user-o"></i>{{i.NumberOfLearners}}</span>
+                    <span class="fa star"><b ng-style="{'width':i.courseScore*10}"></b></span>
+                </dd>
+                <dd class="price" ng-bind="'¥ '+i.coursePrice"></dd>
+            </dl>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="search_list">
+    <nav class="sort">
+        <a href="#!/search?keywords=keywords" ng-class="{'active':types==null}">全站</a>
+        <a href="#!/search?keywords=keywords&types=0" ng-class="{'active':types==0}">课程</a>
+        <a href="#!/search?keywords=keywords&types=1" ng-class="{'active':types==1}">猿问</ai>
+        <a href="#!/search?keywords=keywords&types=2" ng-class="{'active':types==2}">手记</a>
+    </nav>
+    <ul class="course">
+        <li ng-repeat="i in searchList">
+            <a ng-href="#!/course_show?courseId={{i.courseId}}"><img ng-src="{{i.courseCover.smallUrl}}" /></a>
+            <h1><a ng-href="#!/course_show?courseId={{i.courseId}}" ng-bind-html="i.courseName|keyword:keywords"></a></h1>
+            <div>
+                <span ng-bind="teacher[{{i.userId}}].userName"></span><br />
+                <span ng-bind="i.courseCategory | category"></span>
+                <span ng-bind="i.courseLv | level"></span>
+                <span><i class="fa fa-user-o"></i>{{i.NumberOfLearners}}</span>
+            </div>
+            <p ng-bind-html="i.courseBriefly|keyword:keywords"></p>
+        </li>
+    </ul>
+    <div class="notKeywords" ng-if="isData">没有找到与“{{keywords}}”相关的结果</li>
+</div>

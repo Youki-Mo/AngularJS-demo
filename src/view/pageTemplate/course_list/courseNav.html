@@ -1,0 +1,25 @@
+<div class="courseNav">
+    <dl>
+        <dt>方向：</dt>
+        <dd>
+            <a ng-class="{'active':classId==null}" ng-href="#!/course_list">全部</a>
+            <a ng-repeat="i in oneClass" ng-class="{'active':oneActive(class,i.classId,classId)}" ng-href="#!/course_list?classId={{i.classId}}" ng-bind="i.className"></a>
+        </dd>
+    </dl>
+    <dl>
+        <dt>分类：</dt>
+        <dd>
+            <a ng-class="{'active':class[classId].classLv==0||classId==null}" ng-href="#!/course_list?{{three(class,classId)}}">全部</a>
+            <a ng-repeat="i in threeClass" ng-class="{'active':classId==i.classId}" ng-href="#!/course_list?classId={{i.classId}}" ng-bind="i.className">HTML/CSS</a>
+        </dd>
+    </dl>
+    <dl>
+        <dt>难度：</dt>
+        <dd>
+            <a ng-class="{'active':courseLv==null}" ng-href="#!/course_list?{{isParam('classId',classId)}}">全部</a>
+            <a ng-class="{'active':courseLv==0}" ng-href="#!/course_list?courseLv=0&{{isParam('classId',classId)}}">初级</a>
+            <a ng-class="{'active':courseLv==1}" ng-href="#!/course_list?courseLv=1&{{isParam('classId',classId)}}">中级</a>
+            <a ng-class="{'active':courseLv==2}" ng-href="#!/course_list?courseLv=2&{{isParam('classId',classId)}}">高级</a>
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,467 @@
+[
+  {
+    "courseId":0,
+    "courseCover":{
+      "originalUrl":"/images/course/o1.jpg",
+      "smallUrl":"/images/course/s1.jpg"
+    },
+    "courseName":"基于websocket的火拼俄罗斯（升级版）",
+    "category":[19,20],
+    "courseBriefly":"基于H5 websocket的火拼俄罗斯方块升级版，双人对战升级喽！",
+    "courseIntroduction":"本课程是基于websocket的火拼俄罗斯的升级版本，课程中在前两个课的基础上实现了用两个浏览器对战模式，完整的实现了游戏的过程。",
+    "courseCategory":0,
+    "courseLv":2,
+    "courseDuration":"41分钟",
+    "NumberOfLearners":7917,
+    "courseScore":9.9,
+    "addTime":"2017-09-02 10:00:00",
+    "userId":0
+  },
+  {
+    "courseId":1,
+    "courseCover":{
+      "originalUrl":"/images/course/o2.jpg",
+      "smallUrl":"/images/course/s2.jpg"
+    },
+    "courseName":"从JS到TS开发数独游戏（JS版）",
+    "category":[20],
+    "courseBriefly":"使用JS语言为主的前端开发技术实现数独游戏",
+    "courseIntroduction":"通过前端技术实现一个简单的数独游戏，介绍相对简单的数独生成算法(递归)和检查算法。主要使用的前端技术包括 JavaScript、TypeScript 和 LESS 等。同时会讲到前端构建（打包）技术，使用的工具有 Gulp、Webpack、 Babel 和 TSC(TypeScript Compiler) 等。课程的重点在于关键算法和从 JavaScript 技术实现向 TypeScript 技术实现的转换。",
+    "courseCategory":0,
+    "courseLv":1,
+    "courseDuration":"4小时01分钟",
+    "NumberOfLearners":3497,
+    "courseScore":9.7,
+    "addTime":"2017-09-05 10:00:00",
+    "userId":1
+  },
+  {
+    "courseId":2,
+    "courseCover":{
+      "originalUrl":"/images/course/o3.jpg",
+      "smallUrl":"/images/course/s3.jpg"
+    },
+    "courseName":"JS/jQuery宽高的理解和应用",
+    "category":[21],
+    "courseBriefly":"js/jquery各种宽高的理解，结合实例对宽高做一些简单的应用",
+    "courseIntroduction":"js和jquery中各式各样的宽高有很多。平时用的也蛮多，但是有时候我们会把某些宽高的用法和使用场景混淆，本套课程帮大家理清js和jquery的各种宽高，并和大家一起对宽高做一些简单的应用。",
+    "courseCategory":0,
+    "courseLv":1,
+    "courseDuration":"2小时30分钟",
+    "NumberOfLearners":27488,
+    "courseScore":9.7,
+    "addTime":"2017-09-08 10:00:00",
+    "userId":2
+  },
+  {
+    "courseId":3,
+    "courseCover":{
+      "originalUrl":"/images/course/o4.jpg",
+      "smallUrl":"/images/course/s4.jpg"
+    },
+    "courseName":"Web App用组件方式开发全站",
+    "category":[20,22,23],
+    "courseBriefly":"用HTML5/CSS3/JS流行技术，实现移动端可视化数据报告",
+    "courseIntroduction":"不仅刷爆朋友圈，HTML5确实可以让人更好的看清数据的真相",
+    "courseCategory":1,
+    "courseLv":2,
+    "courseDuration":"9小时",
+    "coursePrice":78,
+    "NumberOfLearners":2701,
+    "courseScore":9.9,
+    "addTime":"2017-09-12 10:00:00",
+    "userId":3
+  },
+  {
+    "courseId":4,
+    "courseCover":{
+      "originalUrl":"/images/course/o5.jpg",
+      "smallUrl":"/images/course/s5.jpg"
+    },
+    "courseName":"SSM到Spring Boot 从零开发校园商铺平台",
+    "category":[32,33],
+    "courseBriefly":"SSM到Spring Boot开发及转换/阿里云部署和远程调试/完整的前后端全栈",
+    "courseIntroduction":"本项目运用SSM技术快速迭代出版校园商铺1.0，再结合SSM转型成Spring Boot的思路，切换到校园商铺2.0。同时包含MySQL主从同步实现读写分离，利用SUI Mobile快速实现响应式页面，Redis缓存，数据库加密配置，阿里云部署等实用技术点。",
+    "courseCategory":1,
+    "courseLv":0,
+    "courseDuration":"20小时",
+    "coursePrice":299,
+    "NumberOfLearners":197,
+    "courseScore":10,
+    "addTime":"2017-09-17 10:00:00",
+    "userId":4
+  },
+  {
+    "courseId":5,
+    "courseCover":{
+      "originalUrl":"/images/course/o6.jpg",
+      "smallUrl":"/images/course/s6.jpg"
+    },
+    "courseName":"Get全栈技能点 Vue2.0/Node.js/MongoDB 打造商城系统",
+    "category":[24,29],
+    "courseBriefly":"从前端入门全栈，让你的未来更宽广",
+    "courseIntroduction":"用Vue.js、Node.js、ES6等热门前端技术结合MongoDB，完成前后端开发，让你顺畅的从前端晋级到全栈，让你的职业道路更加宽广，让你的未来发展有更多可能",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"18小时",
+    "coursePrice":348,
+    "NumberOfLearners":875,
+    "courseScore":9.9,
+    "addTime":"2017-11-7 10:00:00",
+    "userId":0
+  },
+  {
+    "courseId":6,
+    "courseCover":{
+      "originalUrl":"/images/course/o7.jpg",
+      "smallUrl":"/images/course/s7.jpg"
+    },
+    "courseName":"Java开发企业级权限管理系统",
+    "category":[32],
+    "courseBriefly":"源于企业真实项目，涉及大量java高级技巧，完整覆盖权限管理系统开发技术",
+    "courseIntroduction":"全程手把手带你运用Java技术栈，打造一套基于最流行的RBAC拓展模型的，分布式的，有界面的，高灵活性，高拓展性的企业级权限管理系统。学完本课程你将可以轻松应对绝大多数企业开发中与权限管理及后台系统相关的需求。",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"19小时",
+    "coursePrice":388,
+    "NumberOfLearners":134,
+    "courseScore":9.9,
+    "addTime":"2017-09-26 10:00:00",
+    "userId":0
+  },
+  {
+    "courseId":7,
+    "courseCover":{
+      "originalUrl":"/images/course/o8.jpg",
+      "smallUrl":"/images/course/s8.jpg"
+    },
+    "courseName":"全网稀缺Vue 2.0高级实战 独立开发专属音乐WebAPP",
+    "category":[29],
+    "courseBriefly":"独一无二的Vue 2.0高级实战课程，达到百度T4水平",
+    "courseIntroduction":"目前市面上还没有一个Vue 2.0 的高级教学，都是一些基础的入门课程，你很难找到一个基于Vue.js的复杂应用的教学， 但是，我们为你准备了这门独一无二的Vue 2.0 高级实战课程",
+    "courseCategory":1,
+    "courseLv":2,
+    "courseDuration":"20小时",
+    "coursePrice":399,
+    "NumberOfLearners":1633,
+    "courseScore":9.9,
+    "addTime":"2017-11-02 10:00:00",
+    "userId":2
+  },
+  {
+    "courseId":8,
+    "courseCover":{
+      "originalUrl":"/images/course/o9.jpg",
+      "smallUrl":"/images/course/s9.jpg"
+    },
+    "courseName":"全网最热的Python3入门+进阶 比自学更快上手实际开发",
+    "category":[34],
+    "courseBriefly":"入门就是最新版本，让你快速掌握Python3",
+    "courseIntroduction":"无论是大数据、人工智能还是机器学习，Python都是最热门的首选语言 ，这次课程，就将带你从基础入门Python3，掌握Python3.x 版本语法，并结合讲师实际工作经验讲解Python使用技巧以及数据结构等相关知识，并为你精心配套了练习题目及实战案例。",
+    "courseCategory":1,
+    "courseLv":0,
+    "courseDuration":"20小时",
+    "coursePrice":366,
+    "NumberOfLearners":894,
+    "courseScore":10,
+    "addTime":"2017-11-05 10:00:00",
+    "userId":4
+  },
+  {
+    "courseId":9,
+    "courseCover":{
+      "originalUrl":"/images/course/o10.jpg",
+      "smallUrl":"/images/course/s10.jpg"
+    },
+    "courseName":"BAT大咖助力 全面升级Android面试",
+    "category":[40],
+    "courseBriefly":"2017最全面的Android面试课程，赢取称心offer的不二之选",
+    "courseIntroduction":"安卓面试全新升级课程，已经帮助很多同学在短时间内拿到了满意的offer，作为Android开发求职路上快速赢取满意offer的必备课程，不管你是什么级别的工程师，都可以通过这门课程的学习，轻松快速搞定Android面试，赢取满意offer！",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"18小时",
+    "coursePrice":288,
+    "NumberOfLearners":1645,
+    "courseScore":9.9,
+    "addTime":"2017-10-08 10:00:00",
+    "userId":0
+  },
+  {
+    "courseId":10,
+    "courseCover":{
+      "originalUrl":"/images/course/o11.jpg",
+      "smallUrl":"/images/course/s11.jpg"
+    },
+    "courseName":"Spring Boot企业微信点餐系统",
+    "category":[32,33],
+    "courseBriefly":"Redis应对分布式session和锁，SpringBoot构建企业级应用，微信支付和退款",
+    "courseIntroduction":"以Spring Boot和微信特性为核心技术栈，实现一个从下单到接单流程完整，包含买家端和卖家端前后台功能的微信点餐系统，带你一步步设计并开发一个中小型企业级Java应用",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"17小时",
+    "coursePrice":348,
+    "NumberOfLearners":934,
+    "courseScore":10,
+    "addTime":"2017-10-09 10:00:00",
+    "userId":1
+  },
+  {
+    "courseId":11,
+    "courseCover":{
+      "originalUrl":"/images/course/o12.jpg",
+      "smallUrl":"/images/course/s12.jpg"
+    },
+    "courseName":"深度学习之神经网络核心原理与算法",
+    "category":[57],
+    "courseBriefly":"神经网络实现／Tensorflow框架／图片分类实现",
+    "courseIntroduction":"深度学习是当前最火热的前沿技术之一，通过本门课程，你能了解到深度学习是什么，为什么强。学习到深度学习核心的算法原理是什么，以及深度学习如何应用在工程方面",
+    "courseCategory":1,
+    "courseLv":2,
+    "courseDuration":"7小时30分钟",
+    "coursePrice":199,
+    "NumberOfLearners":121,
+    "courseScore":10,
+    "addTime":"2017-10-12 10:00:00",
+    "userId":2
+  },
+  {
+    "courseId":12,
+    "courseCover":{
+      "originalUrl":"/images/course/o13.jpg",
+      "smallUrl":"/images/course/s13.jpg"
+    },
+    "courseName":"DevOps和云计算初识",
+    "category":[37,49],
+    "courseBriefly":"学习DevOps和云计算的初步知识",
+    "courseIntroduction":"DevOps几乎是和云计算同一时间出现在IT行业，没有云平台的弹性和按需资源分配，DevOps就没有办法落地。二者的出现彻底将瀑布式开发甚至Agile敏捷扫入历史的废墟，以AWS为首的西方公司已经可以做到每天上千次的迭代和变更，这些都是技术发展的结果。本课程从一个简单的网站开发部署上线，变更，监控，自恢复等等方面简单介绍利用阿里云平台如何践行简单的DevOps。",
+    "courseCategory":0,
+    "courseLv":1,
+    "courseDuration":"50分钟",
+    "NumberOfLearners":1220,
+    "courseScore":10,
+    "addTime":"2017-10-13 10:00:00",
+    "userId":3
+  },
+  {
+    "courseId":13,
+    "courseCover":{
+      "originalUrl":"/images/course/o14.jpg",
+      "smallUrl":"/images/course/s14.jpg"
+    },
+    "courseName":"前端跳槽面试必备技巧",
+    "category":[21,22],
+    "courseBriefly":"一门让你能成功获取前端 Offer 的课程，  不只是技术，面试“技巧”也至关重要",
+    "courseIntroduction":"面试不是单纯考察技术，而是综合能力的考查，关于面试， JD描述怎么看，知识怎么复习，问题如何回答，项目怎么准备，和负责人如何沟通，HR印象怎么留……别小瞧这些问题，往往就是这些决定你能否成功应聘，这次课程教你如何拿下前端Offer！",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"10小时",
+    "coursePrice":199,
+    "NumberOfLearners":861,
+    "courseScore":10,
+    "addTime":"2017-10-15 10:00:00",
+    "userId":4
+  },
+  {
+    "courseId":14,
+    "courseCover":{
+      "originalUrl":"/images/course/o15.jpg",
+      "smallUrl":"/images/course/s15.jpg"
+    },
+    "courseName":"ES6+ 开发电商网站的账号体系 JS SDK",
+    "category":[22],
+    "courseBriefly":"跟随ES6语法新特性，基于原生JS开发，是每个前端工程师最需要的！",
+    "courseIntroduction":"实战中贯穿ES6+ 语法，前端完全使用原生JS语法，不依赖框架，实现模块、组件、请求、视图渲染和事件绑定等，打造一个电商网站的账号体系SDK，提升自己的开发效率和代码可维护性。",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"13小时",
+    "coursePrice":248,
+    "NumberOfLearners":40,
+    "courseScore":10,
+    "addTime":"2017-10-17 10:00:00",
+    "userId":0
+  },
+  {
+    "courseId":15,
+    "courseCover":{
+      "originalUrl":"/images/course/o16.jpg",
+      "smallUrl":"/images/course/s16.jpg"
+    },
+    "courseName":"全程真实数据对接 带你从0开发前后端分离的企业级上线项目",
+    "category":[22,23],
+    "courseBriefly":"【前端实战】前后端分离，对接真实服务端数据，开发并上线一个完整的线上项目",
+    "courseIntroduction":"首次推出完整大型电商平台的前端项目，手把手带你打造一套前后端完全分离、分层架构设计、模块化开发的前端线上电商项目，并讲解与服务端真实数据的对接，让你掌握一线互联网前端开发的经验和技巧。",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"20小时",
+    "coursePrice":299,
+    "NumberOfLearners":1481,
+    "courseScore":10,
+    "addTime":"2017-10-21 10:00:00",
+    "userId":1
+  },
+  {
+    "courseId":16,
+    "courseCover":{
+      "originalUrl":"/images/course/o17.jpg",
+      "smallUrl":"/images/course/s17.jpg"
+    },
+    "courseName":"RxJava与RxAndroid基础入门",
+    "category":[34,40],
+    "courseBriefly":"RxJava与RxAndroid入门",
+    "courseIntroduction":"RxJava与RxAndroid入门",
+    "courseCategory":0,
+    "courseLv":1,
+    "courseDuration":"2小时22分钟",
+    "NumberOfLearners":5224,
+    "courseScore":10,
+    "addTime":"2017-10-23 10:00:00",
+    "userId":2
+  },
+  {
+    "courseId":17,
+    "courseCover":{
+      "originalUrl":"/images/course/o18.jpg",
+      "smallUrl":"/images/course/s18.jpg"
+    },
+    "courseName":"聚焦Python分布式爬虫必学框架Scrapy 打造搜索引擎",
+    "category":[34],
+    "courseBriefly":"彻底掌握Scrapy原理，Django+Elasticsearch搭建搜索引擎",
+    "courseIntroduction":"未来是什么时代？是数据时代！数据分析服务、互联网金融，数据建模、自然语言处理、医疗病例分析……越来越多的工作会基于数据来做，而爬虫正是快速获取数据最重要的方式，相比其它语言，Python爬虫更简单、高效",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"23小时",
+    "coursePrice":388,
+    "NumberOfLearners":1416,
+    "courseScore":10,
+    "addTime":"2017-10-24 10:00:00",
+    "userId":3
+  },
+  {
+    "courseId":18,
+    "courseCover":{
+      "originalUrl":"/images/course/o19.jpg",
+      "smallUrl":"/images/course/s19.jpg"
+    },
+    "courseName":"iOS之分享集成",
+    "category":[41],
+    "courseBriefly":"iOS分享功能的实现！",
+    "courseIntroduction":"本课程主要带领大家了解集成分享功能的流程，告诉大家如何注册友盟、SDK环境的配置、分享功能的实现。并且让大家掌握该如何集成第三方，后续集成其它第三方功能时就可以轻松搞定。",
+    "courseCategory":0,
+    "courseLv":1,
+    "courseDuration":"1小时06分钟",
+    "NumberOfLearners":280,
+    "courseScore":10,
+    "addTime":"2017-10-26 10:00:00",
+    "userId":4
+  },
+  {
+    "courseId":19,
+    "courseCover":{
+      "originalUrl":"/images/course/o20.jpg",
+      "smallUrl":"/images/course/s20.jpg"
+    },
+    "courseName":"Python升级3.6 强力Django+杀手级Xadmin打造在线教育平台",
+    "category":[34],
+    "courseBriefly":"Python 2.7到3.6 完美适配，Django升级 1.11，10天掌握Web核心框架",
+    "courseIntroduction":"25小时Django综合实战，从0打造一个模块完整、功能完善、达到上线标准的在线教育平台，全面掌握Django的同时，得到一套完整的代码",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"26小时",
+    "coursePrice":369,
+    "NumberOfLearners":1484,
+    "courseScore":10,
+    "addTime":"2017-11-01 10:00:00",
+    "userId":0
+  },
+  {
+    "courseId":20,
+    "courseCover":{
+      "originalUrl":"/images/course/o21.jpg",
+      "smallUrl":"/images/course/s21.jpg"
+    },
+    "courseName":"Redux+React Router+Node.js全栈开发",
+    "category":[26,29],
+    "courseBriefly":"全网唯一的React 16+Redux+React Router4实战课程，学到手是你的真本领！",
+    "courseIntroduction":"在别人刚理解React的时候，你已经找到Redux+React Router最佳实践学习路线，学到了最新React 16+Redux+React Router 4技术开发复杂的单页面应用，并使用node.js+express+socket.io管理实时应用的后端，注定你的实力非凡！",
+    "courseCategory":1,
+    "courseLv":2,
+    "courseDuration":"18小时",
+    "coursePrice":388,
+    "NumberOfLearners":175,
+    "courseScore":10,
+    "addTime":"2017-11-02 10:00:00",
+    "userId":1
+  },
+  {
+    "courseId":21,
+    "courseCover":{
+      "originalUrl":"/images/course/o22.jpg",
+      "smallUrl":"/images/course/s22.jpg"
+    },
+    "courseName":"Java大牛 带你从0到上线开发企业级电商项目",
+    "category":[32],
+    "courseBriefly":"【服务端】前后端分离，数据库接口设计，架构设计，功能开发，上线运维",
+    "courseIntroduction":"本课程将手把手的，由浅入深的，带你从零到项目发布上线与运维，让你体验真实的企业级项目开发过程，掌握大牛的编码思维、经验与技巧，并拥有一个属于自己的高质量的线上作品。（特别说明：本课程并非从Java语法开始的，毕竟是项目实战课程，不会讲语法层面的内容，实战前需具备Java，SSM，Linux等基础）",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"20小时",
+    "coursePrice":348,
+    "NumberOfLearners":2610,
+    "courseScore":9.9,
+    "addTime":"2017-11-03 10:00:00",
+    "userId":2
+  },
+  {
+    "courseId":22,
+    "courseCover":{
+      "originalUrl":"/images/course/o23.jpg",
+      "smallUrl":"/images/course/s23.jpg"
+    },
+    "courseName":"Spring Security开发安全的REST服务",
+    "category":[32,33],
+    "courseBriefly":"百万用户级上线代码为基础，带你打造企业级认证授权模块",
+    "courseIntroduction":"全网最细致地讲解Spring Security、Spring Social 、Spring Security OAuth三种技术开发安全的REST服务，彻底掌握一线互联网公司主流的身份认证和授权方式。",
+    "courseCategory":1,
+    "courseLv":2,
+    "courseDuration":"19小时",
+    "coursePrice":366,
+    "NumberOfLearners":451,
+    "courseScore":10,
+    "addTime":"2017-11-04 10:00:00",
+    "userId":3
+  },
+  {
+    "courseId":23,
+    "courseCover":{
+      "originalUrl":"/images/course/o24.jpg",
+      "smallUrl":"/images/course/s24.jpg"
+    },
+    "courseName":"Redis从入门到高可用，分布式实践",
+    "category":[32,47],
+    "courseBriefly":"无论哪种语言的开发者，Redis都是必学的“硬技能 ”",
+    "courseIntroduction":"一门内容丰富Redis课程，每个技术点都介绍使用经验、Java，Python客户端示范、从原理到经验，由浅入深讲解并伴有企业中Redis开发的相关项目以及大规模Redis的实战经验，各种语言的开发工程师和运维工程师都会有所收获",
+    "courseCategory":1,
+    "courseLv":1,
+    "courseDuration":"13小时",
+    "coursePrice":288,
+    "NumberOfLearners":49,
+    "courseScore":10,
+    "addTime":"2017-11-05 10:00:00",
+    "userId":4
+  },
+  {
+    "courseId":24,
+    "courseCover":"/images/course/o25.jpg",
+    "courseName":"前端小白入门",
+    "category":[58],
+    "coursePackage":[0,3,6],
+    "courseBriefly":"从小白到老司机，学会HTML、CSS、JS、jQuery基础，独立开发挂号平台网页！",
+    "courseCategory":2,
+    "courseLv":0,
+    "courseDuration":"52小时",
+    "coursePrice":499,
+    "NumberOfLearners":2734,
+    "courseScore":9.92,
+    "addTime":"2017-11-06 10:00:00"
+  }
+]

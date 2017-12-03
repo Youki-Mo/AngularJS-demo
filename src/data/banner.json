@@ -1,0 +1,32 @@
+[
+  {
+    "bannerId":0,
+    "bannerUrl":"/images/banner/b1.jpg",
+    "courseId":20
+  },
+  {
+    "bannerId":1,
+    "bannerUrl":"/images/banner/b2.jpg",
+    "courseId":21
+  },
+  {
+    "bannerId":2,
+    "bannerUrl":"/images/banner/b3.jpg",
+    "courseId":7
+  },
+  {
+    "bannerId":3,
+    "bannerUrl":"/images/banner/b4.jpg",
+    "courseId":22
+  },
+  {
+    "bannerId":4,
+    "bannerUrl":"/images/banner/b5.jpg",
+    "courseId":5
+  },
+  {
+    "bannerId":5,
+    "bannerUrl":"/images/banner/b6.jpg",
+    "courseId":23
+  }
+]

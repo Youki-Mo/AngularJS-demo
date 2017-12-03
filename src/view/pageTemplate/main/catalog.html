@@ -1,0 +1,51 @@
+<div id="classNav">
+    <div class="bg" style="background:url('{{banner[0].bannerUrl}}')"></div>
+    <div class="con">
+        <ul class="class">
+            <li ng-repeat="a in class | pp:'parentId':null | limitTo:7">
+                <a ui-sref="course_list({classId:a.classId})">{{a.className}}</a>
+                <div>
+                    <dl ng-repeat="b in class | pp:'parentId':a.classId">
+                        <dt ng-bind="b.className"></dt>
+                        <dd ng-repeat="c in class | pp:'parentId':b.classId"><a href="#!/course_list?classId={{c.classId}}" ng-bind="c.className"></a></dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+        <div class="rotation">
+            <div class="content">
+                <a class="box active" href="#!/coding?id={{banner[0].courseId}}"><i style="background-image:url({{banner[0].bannerUrl}})"></i></a>
+                <a ng-repeat="i in banner" ng-if="$index>0" class="box" href="#!/coding?id={{banner[0].courseId}}"><i style="background-image:url({{i.bannerUrl}})"></i></a>
+            </div>
+            <div class="btn prev"><i class="fa fa-angle-left"></i></div>
+            <div class="btn next"><i class="fa fa-angle-right"></i></div>
+        </div>
+        <ul class="careerPath">
+            <li>
+                <i></i>
+                <h1>Web前端攻城狮</h1>
+                <p>互联网时代最火爆的技术</p>
+            </li>
+            <li>
+                <i></i>
+                <h1>PHP攻城狮</h1>
+                <p>世界上最好的语言：)</p>
+            </li>
+            <li>
+                <i></i>
+                <h1>Java攻城狮</h1>
+                <p>健壮、安全、适用广泛</p>
+            </li>
+            <li>
+                <i></i>
+                <h1>Android攻城狮</h1>
+                <p>移动设备市场份额第一</p>
+            </li>
+            <li>
+                <i></i>
+                <h1>IOS攻城狮</h1>
+                <p>可能是全球最好用的系统</p>
+            </li>
+        </ul>
+    </div>
+</div>

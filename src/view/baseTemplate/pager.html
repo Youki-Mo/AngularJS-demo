@@ -1,0 +1,13 @@
+<ul class="pager">
+    <li class="prev active">
+        <a ui-sref="{{router}}({page:0})">首页</a>
+        <a ui-sref="{{router}}({page:prev(page)})">上一页</a>
+    </li>
+    <li class="pageNum">
+        <a ng-repeat="i in list.pageNum|pager:page:list.pageTotal|limitTo:5" ng-class="{'active':isPage(page,i)}" ui-sref="{{router}}({page:i})" ng-bind="i+1"></a>
+    </li>
+    <li class="next">
+        <a ui-sref="{{router}}({page:next(page,list.pageTotal)})">下一页</a>
+        <a ui-sref="{{router}}({page:list.pageTotal})">尾页</a>
+    </li>
+</ul>

@@ -1,0 +1,485 @@
+/**
+* logo样式
+*/
+#header {
+  @h: 72px; //容器高度
+  /*-----分割线-----*/
+  height: @h;
+  min-width: 1280px;
+  background: @white;
+  box-shadow: 0 4px 8px rgba(7, 17, 27, .1);
+  #logo {
+    img {
+      height: @h;
+      float: left;
+      margin-left: 24px;
+      height: 100%;
+    }
+  }
+  .menu, .search {
+    float: left;
+  }
+  /**
+* 导航菜单
+*/
+  .menu {
+    margin-left: 30px;
+    line-height: @h;
+    a {
+      display: block;
+      float: left;
+      margin: 0 18px;
+      cursor: pointer;
+      transition: @linear;
+      font-size: 16px;
+      &:hover {
+        color: @tsh;
+      }
+    }
+    i {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url("@{imageUrl}new.png") no-repeat;
+      position: relative;
+      top: -10px;
+    }
+  }
+  /**
+* 搜索
+*/
+  .search {
+    @sh: 42px; //搜索框区域容器高度
+    @sc: #F9A1A1; //搜索框按钮颜色
+    /*-----分割线-----*/
+    height: @sh;
+    margin: (@h - @sh)/2;
+    position: relative;
+    border-bottom: 1px solid @light-gray;
+    left: 18px;
+    input {
+      height: @sh - 1;
+      width: 270px;
+      border: 0;
+    }
+    .btn {
+      border: 1px solid transparent;
+      color: @color;
+      padding: 4px 8px;
+      font-size: 14px;
+      border-radius: 22px;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid @sc;
+        color: @sc;
+      }
+    }
+    .recommend, .record {
+      position: absolute;
+    }
+    .recommend {
+      top: 10px;
+      right: 36px;
+      a {
+        display: inline-block;
+        background: rgba(180, 182, 183, .15);
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 15px;
+        transition: @linear;
+        &:hover {
+          background: rgba(180, 182, 183, .3);
+        }
+      }
+    }
+    .record {
+      background: @white;
+      width: 100%;
+      top: @sh + (@h - @sh)/2;
+      left: 0;
+      border-radius: 0 0 8px 8px;
+      overflow: hidden;
+      height: 0;
+      box-shadow: 0 4px 8px rgba(7, 17, 27, .1);
+      z-index: @lv2;
+      a {
+        display: block;
+        padding: 8px 12px;
+        &:hover {
+          background: #EDF0F2;
+        }
+      }
+    }
+    &.active {
+      border-color: @sc;
+      .btn {
+        border: 1px solid @sc;
+        color: @sc;
+      }
+      .recommend {
+        display: none;
+      }
+      .record {
+        height: auto;
+      }
+    }
+  }
+  /**
+* 用户相关
+*/
+  .user {
+    margin-right: 20px;
+    float: right;
+    > div:not(.avatar) {
+      float: left;
+      position: relative;
+      padding: 0 10px;
+      margin: 0 8px;
+      > a {
+        line-height: 72px;
+        &:hover {
+          color: @uhc;
+        }
+      }
+    }
+  }
+  .download, .shopping-cart, .avatar {
+    >div {
+      background: @white;
+      position: absolute;
+      padding: 18px;
+      top: 72px;
+      right: 0;
+      width: 300px;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 8px rgba(7, 17, 27, .1);
+      display: none;
+      z-index: @lv1;
+    }
+    &:hover > div {
+      display: block;
+    }
+  }
+  /**
+* 下载APP
+*/
+  .download {
+    img {
+      width: 108px;
+      float: left;
+      margin-right: 16px;
+    }
+    p {
+      float: left;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    div {
+      a {
+        display: inline-block;
+        width: 136px;
+        padding: 10px 18px;
+        font-size: 12px;
+        background: @color;
+        color: @white;
+        border-radius: 22px;
+        margin-top: 5px;
+        transition: @linear;
+        &:hover {
+          background: black;
+        }
+      }
+    }
+  }
+  /**
+* 购物车
+*/
+  .shopping-cart {
+    > div {
+      width: 350px;
+    }
+    p {
+      font-size: 16px;
+      span {
+        font-size: 12px;
+        float: right;
+        color: @gray;
+      }
+    }
+    .notProduct, .productList {
+      width: 100%;
+      margin: 12px 0;
+      border-top: 1px solid @light-gray;
+      border-bottom: 1px solid @light-gray;
+      height: 325px;
+    }
+    //有课程
+    .productList {
+      overflow-y: scroll;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      li {
+        padding: 10px 0;
+        &:hover {
+          background: #f2f2f2;
+          .del {
+            display: inline;
+          }
+        }
+      }
+      .img {
+        img {
+          width: 100px;
+          float: left;
+          margin-right: 8px;
+        }
+      }
+      h2 {
+        font-size: 12px;
+        width: 175px;
+        float: left;
+        max-height: 32px;
+        margin-bottom: 6px;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      span, .del {
+        font-size: 12px;
+      }
+      span {
+        color: @uhc;
+      }
+      .del {
+        float: right;
+        margin-right: 20px;
+        display: none;
+        color: @gray;
+        &:hover {
+          color: @uhc;
+        }
+      }
+    }
+    //无课程
+    .notProduct {
+      padding-top: 45px;
+      text-align: center;
+      font-size: 14px;
+      img {
+        background: @gray;
+        border-radius: 50%;
+      }
+      p {
+        width: 60%;
+        margin: 0 20%;
+        font-size: 12px;
+        color: @gray;
+        border-top: 1px solid @light-gray;
+        margin-top: 25px;
+        padding-top: 25px;
+        margin-bottom: 10px;
+      }
+      a {
+        line-height: 25px;
+        font-size: 12px;
+        color: @uhc;
+      }
+    }
+    //购物车底部
+    .cart-bottom {
+      width: 100%;
+      a {
+        font-size: 12px;
+        color: @gray;
+        line-height: 30px;
+      }
+      button {
+        float: right;
+        border: 0;
+        border-radius: 20px;
+        background: rgba(240, 20, 20, .7);
+        color: @white;
+        font-size: 12px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+    }
+  }
+  /**
+* 用户
+*/
+  .avatar {
+    float: left;
+    position: relative;
+    padding: 0 10px;
+    margin: 0 8px;
+    height: 72px;
+    >a img {
+      margin-top: 20px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    &:hover>a img {
+      box-shadow: 0 0 0 2px @uhc;
+    }
+    //用户中心--用户信息
+    .info {
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      img {
+        border-radius: 50%;
+        width: 70px;
+        float: left;
+        margin-right: 12px;
+      }
+      dl {
+        width: 172px;
+        float: left;
+        margin: 12px 0;
+      }
+      dt {
+        font-size: 16px;
+        color: black;
+        margin: 4px;
+      }
+      dd {
+        font-size: 12px;
+        color: @gray;
+        margin: 4px;
+      }
+    }
+    //用户菜单
+    nav {
+      margin: 18px 0;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      a {
+        display: block;
+        width: 50%;
+        float: left;
+        padding: 8px 16px;
+        color: @color;
+        cursor: pointer;
+        &:hover {
+          background: #d9dde1;
+          color: @color;
+        }
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+    //用户中心--当前在学课程
+    .continue-course {
+      @size: 12px;
+      /*-----分割线-----*/
+      border-bottom: 1px solid #edf1f2;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+      p {
+        font-size: @size;
+        font-weight: bold;
+        height: 16px;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 10px;
+      }
+      span {
+        display: inline-block;
+        width: 80%;
+        padding-left: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: @size;
+      }
+      a {
+        color: @light-green;
+        padding-left: 18px;
+        float: right;
+        font-size: @size;
+        &:hover {
+          color: @green;
+        }
+      }
+    }
+    .logout {
+      font-size: 12px;
+      color: @gray;
+    }
+  }
+  &.black {
+    background: @black;
+    #logo img{
+      height:40px;
+      margin:16px 0;
+      margin-left: 24px;
+    }
+    .menu{
+      a{
+        color:@gray;
+        &:hover,
+        &.active{
+          color:@white;
+        }
+      }
+    }
+    .search{
+      border-color: @light-gray;
+      input{
+        background:@black;
+        color:@white;
+      }
+      .recommend {
+        top: 10px;
+        right: 36px;
+        a {
+          background: rgba(180, 182, 183, .15);
+          color:@gray;
+          &:hover {
+            color:@white;
+            background: rgba(180, 182, 183, .3);
+          }
+        }
+      }
+      i {
+        color:@gray;
+        &:hover {
+          border: 1px solid @light-gray;
+          color: @light-gray;
+        }
+      }
+      &.active {
+        border-color: @light-gray;
+        i {
+          border: 1px solid @light-gray;
+          color: @light-gray;
+        }
+      }
+    }
+    .user > div:not(.avatar) > a {
+      color:@gray;
+      &:hover {
+        color: @white;
+      }
+    }
+    .avatar:hover>a img {
+      box-shadow: 0 0 0 2px @gray;
+    }
+  }
+}

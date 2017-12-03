@@ -1,0 +1,80 @@
+/**
+ * 公用参数
+ */
+
+@black: #07111b;  // 黑色
+@white: #FFFFFF;  // 白色
+@drak-gray: #4D555D;  // 深灰
+@half-gray: #787d82;  // 半灰
+@gray: #93999F; // 灰色
+@light-gray: #D9DDE1; // 浅灰
+@transparent-gray: #EFEFEF; // 透明灰
+@red: #F01414; // 红色
+@warm-red:#F02930;  // 暖红
+@light-green: #66D28A;  // 浅绿
+@green: #00B43C;  // 绿色
+@warm-blue:#2D68B2; // 暖蓝
+
+@size: 14px;  // 默认字体大小
+@color: @drak-gray; // 默认字体颜色
+@border: @light-gray; // 默认边框颜色
+@imageUrl: "/images/default/";  // 默认图片路径
+@uhc: #f01414;  // 默认用户链接悬停字体色 user-hover-color
+@tsh: @black; // 默认网站链接悬停颜色 this-site-hover
+
+
+/* 默认层级 */
+
+@topLv: 9; // 顶级
+@lv1: 6; // lv.1
+@lv2: 3; // lv.2
+@lv3: 1; // 默认
+@bottomLv: -1;  //最底层
+
+/* 动画效果 */
+
+@linear: all .2s; //平滑
+@ease: all .2s ease;  //慢-快-慢
+@ease-in: all .2s ease-in;  //慢-正常
+@ease-in: all .2s ease-out; //正常-慢
+@ease-in: all .2s ease-in-out;  //慢-正常-慢
+
+/**
+  * 默认样式
+  */
+
+html, body, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: @color;
+  font-size: @size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+a, i, span {
+  box-sizing: border-box;
+}
+
+a {
+  color: @color;
+}
+
+body {
+  background: #f8fafc;
+}
+
+input, button {
+  outline: 0 none;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+}

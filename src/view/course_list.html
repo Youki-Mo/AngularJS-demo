@@ -1,0 +1,21 @@
+<div>
+    <base-head scope-bg="black"></base-head>
+    <app-course-nav></app-course-nav>
+    <div class="course_list">
+        <app-cr></app-cr>
+        <a ng-repeat="i in list.data" ng-href="#!/course_show?courseId={{i.courseId}}" ng-if="i.courseCategory!=2">
+            <div class="img">
+                <img ng-src="{{i.courseCover.smallUrl}}">
+                <div>
+                    <span ng-repeat="j in i.category | limitTo:2" ng-bind="class[j].className"></span>
+                </div>
+            </div>
+            <div class="info">
+                <h1 ng-bind="i.courseName"></h1>
+                <span ng-bind="i.courseLv | level">中级</span><span><i class="fa fa-user-o"></i>{{i.NumberOfLearners}}</span>
+                <p ng-bind="i.courseBriefly"></p>
+            </div>
+        </a>
+    </div>
+    <base-pager scope-router="course_list" scope-list="list" scope-page="page"></base-pager>
+</div>

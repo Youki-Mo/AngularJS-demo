@@ -1,0 +1,83 @@
+<div id="header" ng-class="bg">
+    <a href="#!/main" id="logo"><img ng-src="{{bg=='black'?'/images/default/logo.png':'/images/default/logo_new.png'}}"/></a>
+    <nav class="menu">
+        <a href="#!/course_list">课程</a>
+        <a href="">职业路径<i></i></a>
+        <a href="">实战</a>
+        <a href="">猿问</a>
+        <a href="">手记</a>
+    </nav>
+    <div class="search" ng-class="{'active':so}">
+        <input ng-focus="focus()" ng-blur="blur()" ng-keyup="keyup($event)" ng-model="txt">
+        <i class="fa fa-search btn" ng-click="search()"></i>
+        <div class="recommend">
+            <a href="#!/search?keywords=前端">前端</a>
+            <a href="#!/search?keywords=Java">Java</a>
+        </div>
+        <div class="record">
+        </div>
+    </div>
+    <div class="user">
+        <div class="download">
+            <a href="javascript:;">下载APP</a>
+            <div>
+                <img ng-src="/images/default/appload.png">
+                <p>扫描下载慕课网APP</p>
+                <a href="javascript:;"><i class="fa fa-apple"></i>&nbsp;APP&nbsp;Store下载</a>
+                <a href="javascript:;"><i class="fa fa-android"></i>&nbsp;Android下载</a>
+            </div>
+        </div>
+        <div class="shopping-cart">
+            <a href="javascript:;">购物车</a>
+            <div>
+                <p>我的购物车<span>已加入1门课程</span></p>
+                <ul class="productList" ng-show="false">
+                    <li>
+                        <a class="img" href="javascript:;"><img ng-src="/images/s6.jpg" title="企业级刚需Nginx入门，全面掌握Nginx配置+快速搭建高可用架构"></a>
+                        <h2><a href="javascript:;" title="企业级刚需Nginx入门，全面掌握Nginx配置+快速搭建高可用架构">企业级刚需Nginx入门，全面掌握Nginx配置+快速搭建高可用架构</a></h2>
+                        <span>¥199</span>
+                        <a class="del" href="javascript:;">删除</a>
+                    </li>
+                </ul>
+                <div class="notProduct">
+                    <img ng-src="/images/default/n1.png"><br>
+                    购物车空空如也
+                    <p>快去这里选购你中意的课程</p>
+                    <a href="javascript:;">实战课程</a><br/>
+                    <a href="javascript:;">职业路径</a>
+                </div>
+                <div class="cart-bottom">
+                    <a href="javascript:;">订单中心</a>
+                    <button>去购物车</button>
+                </div>
+            </div>
+        </div>
+        <!-- 登录 -->
+        <div class="notice">
+            <a href="javascript:;">通知</a>
+        </div>
+        <div class="avatar">
+            <a href="javascript:;"><img ui-sref="user" ng-src="/images/avatar.jpg"></a>
+            <div>
+                <div class="info">
+                    <a class="img" href="javascript:;"><img ng-src="/images/avatar.jpg"></a>
+                    <dl>
+                        <dt><a href="javascript:;">雨畔</a></dt>
+                        <dd>经验4,601&nbsp;&nbsp;&nbsp;积分9</dd>
+                    </dl>
+                </div>
+                <nav>
+                    <a href="javascript:;"><i class="fa fa-calendar"></i>我的课程</a>
+                    <a href="javascript:;"><i class="fa fa-file-text-o"></i>订单中心</a>
+                    <a href="javascript:;"><i class="fa fa-gift"></i>积分商城</a>
+                    <a href="javascript:;"><i class="fa fa-clock-o"></i>个人设置</a>
+                </nav>
+                <div class="continue-course">
+                    <p><i class="fa fa-clock-o"></i>瀑布流布局</p>
+                    <span>2-5onscroll事件实现瀑布流布局的图片加载功能</span><a href="javascript:;">继续</a>
+                </div>
+                <a class="logout" href="javascript:;">安全退出</a>
+            </div>
+        </div>
+    </div>
+</div>

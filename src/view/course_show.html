@@ -1,0 +1,32 @@
+<div>
+    <base-head scope-bg="black"></base-head>
+    <div ng-if="isPage">
+        <div class="course_info">
+            <div>
+                <div class="course_map">
+                    <a href="#!/course_list">课程</a>＼
+                    <a href="#!/course_list?classId={{course.category[0]}}">移动开发</a>＼
+                    <a ng-href="#!/course_list?classId={{course.category[0]}}">Android</a>＼
+                    <a ng-href="#!/course_show?courseId={{course.courseId}}" ng-bind="course.courseName">Bitmap高效缓存</a>
+                </div>
+                <h1 ng-bind="course.courseName">Bitmap高效缓存</h1>
+                <dl>
+                    <dt><a href="">开始学习<i class="fa fa-star-o"></i></a></dt>
+                    <dd>学习人数<br><span ng-bind="course.NumberOfLearners">1</span></dd>
+                    <dd>难度级别<br><span ng-bind="course.courseLv | level">初级</span></dd>
+                    <dd>课程时长<br><span ng-bind="course.courseDuration">一小时</span></dd>
+                    <dd>综合评分<br><span ng-bind="course.courseScore">10.0</span></dd>
+                </dl>
+                <div class="share">
+                    <a href=""><i class="fa fa-weixin"></i></a>
+                    <a href=""><i class="fa fa-qq"></i></a>
+                    <a href=""><i class="fa fa-weibo"></i></a>
+                </div>
+            </div>
+            <div class='bg' ng-style="{'background-image':'url('+course.courseCover.originalUrl+')'}"></div>
+        </div>
+        <div class="course_details">
+            {{ngStyle}}
+        </div>
+    </div>
+</div>
